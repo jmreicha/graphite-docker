@@ -1,13 +1,14 @@
 ###Graphite Docker
 
 This will set up all of the components that Graphite needs to run.  It also
-runs Grafana and connects to the graphite container.  A few assumptions for
-configurations are made, if you have any specific needs you can modify the
-default configs and rebuild the containers with the updated configs.
+runs Grafana and connects to the graphite container.
+
+A few assumptions for configurations are made, if you have any specific needs
+you can modify the default configs and rebuild the containers with the updated
+configs.
 
 **Instructions for running**
 
- * Download and install Docker
  * Download and install docker-compose (`sudo pip install -U docker-compose`)
  * Clone this repo (`git clone https://github.com/jmreicha/graphite-docker`)
  * Modify install script (`chmod +x bootstrap.sh`)
@@ -29,6 +30,8 @@ the basic_auth settings.
 The basic_auth generation relies on openssl for creating the user and
 hash for the password so one of these tools must be installed for the
 basic_auth component to work.
+
+**Notes**
 
 In a production environment it would be a good idea to mount in a separate
 volume for data in to the /data as a mount point so that if the OS runs out of

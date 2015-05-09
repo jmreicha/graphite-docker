@@ -1,5 +1,5 @@
 graphite:
-    build: .
+    build: ./config
     restart: always
     ports:
         - "8080:80"

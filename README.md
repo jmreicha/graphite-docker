@@ -11,10 +11,11 @@ configs.
 
  * Download and install docker-compose (`sudo pip install -U docker-compose`)
  * Clone this repo (`git clone https://github.com/jmreicha/graphite-docker`)
- * Modify install script (`chmod +x bootstrap.sh`)
+ * Modify install script (`cd graphite-docker && chmod +x bootstrap.sh`)
  * Run script (`./bootstrap.sh`)
  * Run the graphite stack (`docker-compose up`)
  * Or in detached mode (`docker-compose up -d`)
+ * Open up a browser and navigate to address where these containers are running
 
 **Details**
 

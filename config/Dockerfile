@@ -36,6 +36,9 @@ RUN pip install graphite-api[sentry] whisper carbon
 # http://graphite-api.readthedocs.org/en/latest/installation.html#extra-dependencies
 # RUN pip install -y graphite-api[cache]
 
+# Fix issues with carbon-cache by upgrading it
+RUN pip install --upgrade carbon
+
 # Graphite
 COPY carbon.conf /opt/graphite/conf/carbon.conf
 COPY storage-schemas.conf /opt/graphite/conf/storage-schemas.conf
